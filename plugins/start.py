@@ -36,10 +36,9 @@ async def start(client,message):
 	try:
 	    id = message.text.split(' ')[1]
 	except:
-	    await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }\n
-	__**I am 4GB File/Video Renamer Bot, Please Activate My Plan To Rename 2Gb+ Files & Remove Time Limit\n\nContact Here : @M2LINKSBOT**__
-	""",reply_to_message_id = message.id ,  
+	    await message.reply_text(text =f"""Hello {wish} {message.from_user.first_name }\n
+	__**I am 4GB File/Video Renamer Bot, Please Activate My Plan To Rename 2Gb+ Files & Remove Time Limit\n\nContact Here : @M2LINKSBOT**__""",
+	reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
 	 [ InlineKeyboardButton("UPDATES 💎 " ,url="https://t.me/m2links") , 
 	InlineKeyboardButton("SUPPORT 🧐", url="https://t.me/M2linksCommunity")]))
