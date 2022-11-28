@@ -37,12 +37,12 @@ async def start(client,message):
 	    id = message.text.split(' ')[1]
 	except:
 	    await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }
-	__I am 4Gb file renamer bot, Please sent Me Your telegram id To activate 4Gb file Rename Plan \n\n Contact Here : @M2LINKSBOT__
+	<b>Hello {wish} {message.from_user.first_name }</b>
+	<b>\n\nI am 4Gb file renamer bot, Please sent Me Your telegram id To activate 4Gb file Rename Plan \n\n Contact Here : @M2LINKSBOT</b>
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("UPDATES 💎" ,url="https://t.me/M2links"), 
-	InlineKeyboardButton("SUPPORT ✅", url="https://t.me/M2linkscommunity") ]]))
+	 [[ InlineKeyboardButton("UPDATES" ,url="https://t.me/M2links"), 
+	InlineKeyboardButton("SUPPORT", url="https://t.me/M2linkscommunity") ]]))
 	    return
 	if id:
 	    if old == True:
@@ -54,8 +54,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("UPDATES 💎" ,url="https://t.me/M2links"), 
-	InlineKeyboardButton("SUPPORT ✅", url="https://t.me/M2linkscommunity") ]]))
+	 [[ InlineKeyboardButton("UPDATES" ,url="https://t.me/M2links"), 
+	InlineKeyboardButton("SUPPORT", url="https://t.me/M2linkscommunity") ]]))
 	        except:
 	             return
 	    else:
@@ -70,8 +70,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("UPDATES 💎" ,url="https://t.me/M2links"), 
-	InlineKeyboardButton("SUPPORT ✅", url="https://t.me/M2linkscommunity") ]]))
+	 [[ InlineKeyboardButton("UPDATES" ,url="https://t.me/M2links"), 
+	InlineKeyboardButton("SUPPORT", url="https://t.me/M2linkscommunity") ]]))
 	         
 
 
