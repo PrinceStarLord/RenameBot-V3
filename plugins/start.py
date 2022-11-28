@@ -38,8 +38,7 @@ async def start(client,message):
 	except:
 	    await message.reply_text(text =f"""
 	Hello {wish} {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
+	__I am 4Gb file renamer bot, Please sent Me Your telegram id To activate 4Gb file Rename Plan \n\n Contact Here : @M2LINKSBOT__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
 	 [[ InlineKeyboardButton("UPDATES 💎" ,url="https://t.me/M2links"), 
