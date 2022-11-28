@@ -37,13 +37,12 @@ async def start(client,message):
 	    id = message.text.split(' ')[1]
 	except:
 	    await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
+	Hello {wish} {message.from_user.first_name }\n
+	__**I am 4GB File/Video Renamer Bot, Please Activate My Plan To Rename 2Gb+ Files & Remove Time Limit\n\nContact Here : @M2LINKSBOT**__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("JOIN 💎 " ,url="https://t.me/m2links") ], 
-	[InlineKeyboardButton("SUPPORT 🧐", url="https://t.me/M2linksCommunity") ]  ]))
+	 [ InlineKeyboardButton("UPDATES 💎 " ,url="https://t.me/m2links") , 
+	InlineKeyboardButton("SUPPORT 🧐", url="https://t.me/M2linksCommunity")]))
 	    return
 	if id:
 	    if old == True:
@@ -55,8 +54,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	  [[ InlineKeyboardButton("JOIN 💎 " ,url="https://t.me/m2links") ], 
-	[InlineKeyboardButton("SUPPORT 🧐", url="https://t.me/M2linksCommunity") ]  ]))
+	  [ InlineKeyboardButton("UPDATES 💎 " ,url="https://t.me/m2links") ], 
+	[InlineKeyboardButton("SUPPORT 🧐", url="https://t.me/M2linksCommunity")]))
 	        except:
 	             return
 	    else:
@@ -71,8 +70,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	  [[ InlineKeyboardButton("JOIN 💎 " ,url="https://t.me/m2links") ], 
-	[InlineKeyboardButton("SUPPORT 🧐", url="https://t.me/M2linksCommunity") ]  ]))
+	  [InlineKeyboardButton("UPDATES 💎 " ,url="https://t.me/m2links") ], 
+	[InlineKeyboardButton("SUPPORT 🧐", url="https://t.me/M2linksCommunity")]))
 	         
 
 
@@ -88,7 +87,7 @@ async def send_doc(client,message):
        		await message.reply_text("**__You are not subscribed my channel__** ",
        		reply_to_message_id = message.id,
        		reply_markup = InlineKeyboardMarkup(
-       		[ [ InlineKeyboardButton("SUPPORT 🧐", url="https://t.me/M2linksCommunity") ]   ]))
+       		[ [ InlineKeyboardButton("⚠️ JOIN HERE ⚠️ ", url="https://t.me/M2links") ]   ]))
        		return
        
        bot_data = find_one(int(botid))
@@ -146,7 +145,7 @@ async def send_doc(client,message):
        		            return
        		        pre_check = check_expi(buy_date)
        		        if pre_check == True:
-       		            await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {humanize.naturalsize(file.file_size)}\n**Dc ID** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 Rename",callback_data = "rename"),InlineKeyboardButton("✖️ Cancel",callback_data = "cancel")  ]]))
+       		            await message.reply_text(f"""__What do you want me to do with this file?__\n\n**File Name** :- {filename}\n\n**File Size** :- {humanize.naturalsize(file.file_size)}\n""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 Rename",callback_data = "rename"),InlineKeyboardButton("✖️ Cancel",callback_data = "cancel")  ]]))
        		            total_rename(int(botid),prrename)
        		            total_size(int(botid),prsize,file.file_size)
        		        else:
@@ -160,7 +159,7 @@ async def send_doc(client,message):
        		    fileid = file.file_id
        		    total_rename(int(botid),prrename)
        		    total_size(int(botid),prsize,file.file_size)
-       		    await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {filesize}\n**Dc ID** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup(
+       		    await message.reply_text(f"""__What do you want me to do with this file?__\n\n**File Name** :- {filename}\n\n**File Size** :- {filesize}\n""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup(
        		[[ InlineKeyboardButton("📝 Rename",callback_data = "rename"),
        		InlineKeyboardButton("✖️ Cancel",callback_data = "cancel")  ]]))
        		
